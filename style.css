@@ -235,7 +235,7 @@ header .container {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(32, 33, 34, 0.7), rgba(5, 6, 7, 0.8)), url('./equipe.png?v=2') no-repeat center center/cover;
+    background: linear-gradient(rgba(32, 33, 34, 0.7), rgba(5, 6, 7, 0.1)), url('./equipe.JPG?v=2') no-repeat center center/cover;
     color: var(--light-text-color);
     padding: 100px 0;
     text-align: center;
