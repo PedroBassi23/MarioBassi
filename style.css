@@ -311,6 +311,22 @@ header .container {
     font-size: 1.5em;
 }
 
+/* Responsividade */
+@media (max-width: 992px) {
+    .about-us-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-us-image {
+        margin-bottom: 2rem;
+        max-width: 400px;
+    }
+    .problem-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 /* Seção Solução */
 .solution-features {
     display: grid;
@@ -624,3 +640,4 @@ footer hr { border: 0; border-top: 1px solid #4a627a; margin: 2rem 0; }
     .whatsapp-float:hover i { transform: none; }
     .whatsapp-float i { transform: scale(1); }
 }
+
