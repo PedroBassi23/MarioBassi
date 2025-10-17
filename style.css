@@ -862,6 +862,46 @@ footer hr { border: 0; border-top: 1px solid #4a627a; margin: 2rem 0; }
 }
 .whatsapp-float:hover span { transform: scale(1); }
 
+
+/* =================================== */
+/* Estilos para a Página de Obrigado   */
+/* =================================== */
+
+.thank-you-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center;     /* Centraliza horizontalmente */
+    text-align: center;
+    min-height: 65vh;      /* Garante que o conteúdo ocupe a maior parte da tela, empurrando o footer para baixo */
+    padding: 40px 20px;
+  }
+  
+  .thank-you-container h1 {
+    font-size: 2.6rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    display: flex; /* Para alinhar o texto e o ícone perfeitamente */
+    align-items: center;
+    gap: 15px;     /* Espaço entre o texto e o ícone */
+  }
+  
+  .thank-you-container p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    max-width: 650px; /* Melhora a legibilidade em telas grandes */
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+  
+  .thank-you-container .btn {
+    margin-top: 2rem; /* Adiciona um espaço antes do botão */
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  
 /* Responsividade */
 @media (max-width: 992px) {
     .process-steps::before { display: none; }
