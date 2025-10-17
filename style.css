@@ -246,6 +246,7 @@ header .container {
     text-align: center;
 }
 
+
 .hero h1 {
     color: var(--light-text-color);
     text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
@@ -307,7 +308,6 @@ header .container {
     border-radius: 4px;
 }
 .problem-list i {
-<<<<<<< HEAD
     color: var(--accent-color);
     font-size: 1.5em;
 }
@@ -411,13 +411,10 @@ header .container {
     gap: 12px;
 }
 .about-us-content ul li i {
-=======
->>>>>>> 64e76b00b4afc2a830faa7d80884ab8ad0972657
     color: var(--accent-color);
     font-size: 1.5em;
 }
 
-<<<<<<< HEAD
 /* Seção Serviços */
 .services-grid {
     display: grid;
@@ -582,9 +579,6 @@ footer hr { border: 0; border-top: 1px solid #4a627a; margin: 2rem 0; }
 }
 .whatsapp-float:hover span { transform: scale(1); }
 
-/* Responsividade */
-@media (max-width: 992px) {
-=======
 /* Responsividade */
 @media (max-width: 992px) {
     .about-us-container {
@@ -870,16 +864,30 @@ footer hr { border: 0; border-top: 1px solid #4a627a; margin: 2rem 0; }
 
 /* Responsividade */
 @media (max-width: 992px) {
->>>>>>> 64e76b00b4afc2a830faa7d80884ab8ad0972657
-    .about-us-container { flex-direction: column; text-align: center; }
-    .about-us-image { margin-bottom: 2rem; max-width: 450px; }
     .process-steps::before { display: none; }
     .process-steps li { padding-left: 0; }
     .step-number { position: static; margin: 0 auto 1rem auto; }
     .process-steps li { flex-direction: column; align-items: center; text-align: center; }
+    .about-us-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-us-image {
+        margin-bottom: 2rem;
+        max-width: 400px;
+    }
+    .problem-list {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 768px) {
+
+    .hero {
+        background: linear-gradient(rgba(10, 20, 30, 0.5), rgba(10, 20, 30, 0.7)), url('./equipe2.JPG') no-repeat center center/cover;
+        padding: 80px 0; /* Ajuste opcional de padding para mobile */
+    }
+
     .section-padding { padding: 60px 0; }
     h1 { font-size: 2.4rem; }
     h2 { font-size: 2.0rem; }
@@ -906,8 +914,6 @@ footer hr { border: 0; border-top: 1px solid #4a627a; margin: 2rem 0; }
     .footer-logo { display: flex; flex-direction: column; align-items: center; }
     .footer-social { margin-top: 1.5rem; }
     .footer-social a { margin: 0 12px; }
-<<<<<<< HEAD
-
     .whatsapp-float, .whatsapp-float:hover {
         width: 50px;
         height: 50px;
@@ -916,8 +922,6 @@ footer hr { border: 0; border-top: 1px solid #4a627a; margin: 2rem 0; }
     .whatsapp-float:hover i { transform: none; }
     .whatsapp-float i { transform: scale(1); }
 }
-=======
-
     .whatsapp-float, .whatsapp-float:hover {
         width: 50px;
         height: 50px;
@@ -925,6 +929,3 @@ footer hr { border: 0; border-top: 1px solid #4a627a; margin: 2rem 0; }
     .whatsapp-float span { display: none; }
     .whatsapp-float:hover i { transform: none; }
     .whatsapp-float i { transform: scale(1); }
-}
-
->>>>>>> 64e76b00b4afc2a830faa7d80884ab8ad0972657
