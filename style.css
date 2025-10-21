@@ -796,88 +796,31 @@ footer hr { border: 0; border-top: 1px solid #4a627a; margin: 2rem 0; }
 .contact-info i { color: var(--primary-color); width: 20px; margin-top: 4px; }
 
 
-/* ===== Estilo enxuto para seções legais (privacidade / termos) ===== */
-.legal-compact { padding: 24px 0; }
-.legal-compact .container { max-width: 900px; padding: 0 12px; }
-
-/* Metadados */
-.legal-compact .small-meta {
-  font-size: 0.85rem;
-  color: #6c757d;
-  margin-bottom: 8px;
-}
-
-/* Details / summary para exibir de forma compacta */
-.legal-details {
-  background: transparent;
-  border: none;
-  margin-top: 10px;
-  font-size: 0.95rem;
-}
-.legal-details summary {
-  list-style: none;
-  cursor: pointer;
-  font-weight: 700;
-  color: var(--secondary-color);
-  padding: 10px 12px;
-  border-radius: 8px;
-  display: inline-block;
-  background: rgba(44,62,80,0.04);
-  border: 1px solid rgba(44,62,80,0.04);
-}
-.legal-details summary::-webkit-details-marker { display: none; }
-
-/* O conteúdo fica colapsado por padrão; quando aberto, exibido com padding discreto */
-.legal-details[open] summary {
-  background: rgba(44,62,80,0.06);
-}
-.legal-details .legal-text {
-  margin-top: 12px;
-  background: rgba(248,249,250,0.8);
-  padding: 14px;
-  border-radius: 8px;
-  border: 1px solid var(--border-color);
-  color: #545b62;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-/* Headings internos mais compactos */
-.legal-text h3 {
-  margin-top: 12px;
-  margin-bottom: 6px;
-  font-size: 1rem;
-  color: var(--primary-color);
-  font-weight: 700;
-  border-bottom: none;
-}
-
-/* Links internos discretos */
-.legal-text a {
-  color: var(--primary-color);
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
-/* Deixar visual leve em telas pequenas — manter tudo compacto */
-@media (max-width: 768px) {
-  .legal-compact { padding: 18px 0; }
-  .legal-details summary {
-    width: 100%;
-    box-sizing: border-box;
+/* Ajustes do acordeão: ícone e transição */
+.accordion-header { 
+    background: none; border: none; padding: 18px 10px; cursor: pointer;
   }
-  .legal-details .legal-text { padding: 12px; font-size: 0.93rem; }
-}
-
-/* Opcional: ajudar usuários a encontrarem o sumário por teclado */
-.legal-details summary:focus {
-  outline: 3px solid rgba(197,168,128,0.18);
-  outline-offset: 2px;
-}
-
-/* Minimizar impacto visual no fluxo da página */
-.section-padding.bg-light + .section-padding { margin-top: 18px; }
-
+  .accordion-header:focus { outline: 3px solid rgba(197,168,128,0.18); outline-offset: 3px; }
+  
+  .icon-toggle {
+    transition: transform 0.25s ease, color 0.25s ease;
+    color: var(--accent-color);
+    font-size: 1.05rem;
+    width: 22px; display: inline-block; text-align: center;
+  }
+  
+  /* Gira levemente o ícone quando ativo (opcional) */
+  .accordion-item.active .icon-toggle {
+    transform: rotate(90deg);
+    color: var(--primary-color);
+  }
+  
+  /* Garante que o conteúdo esteja oculto inicialmente */
+  .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out; }
+  
+  /* Conteúdo interno com espaçamento confortável */
+  .accordion-content-inner { padding: 8px 12px 28px 12px; color: #545b62; line-height: 1.6; }
+  
 
 /* Rodapé */
 footer {
