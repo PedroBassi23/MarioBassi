@@ -239,7 +239,7 @@ header .container {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(10, 20, 30, 0.8), rgba(10, 20, 30, 0.7)), url('./equipe.JPG?v=2') no-repeat center center/cover;
+    background: linear-gradient(rgba(10, 20, 30, 0.8), rgba(10, 20, 30, 0.7)), url('./equipe.webp') no-repeat center center/cover;
     background-attachment: fixed; /* Efeito Parallax */
     color: var(--light-text-color);
     padding: 120px 0;
@@ -924,7 +924,7 @@ footer hr { border: 0; border-top: 1px solid #4a627a; margin: 2rem 0; }
 @media (max-width: 768px) {
 
     .hero {
-        background: linear-gradient(rgba(10, 20, 30, 0.5), rgba(10, 20, 30, 0.7)), url('./equipe2.JPG') no-repeat center center/cover;
+        background: linear-gradient(rgba(10, 20, 30, 0.5), rgba(10, 20, 30, 0.7)), url('./equipe2.webp') no-repeat center center/cover;
         padding: 80px 0; /* Ajuste opcional de padding para mobile */
     }
 
