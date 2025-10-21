@@ -512,10 +512,30 @@ header .container {
 .contact-info p { margin-bottom: 1.2rem; display: flex; align-items: flex-start; gap: 12px; }
 .contact-info i { color: var(--primary-color); width: 20px; margin-top: 4px; }
 
-/* Seções de Texto Legal */
-.legal-text { max-width: 800px; margin: 0 auto; }
-.legal-text h2 { text-align: center; }
-.legal-text h3 { margin-top: 2rem; margin-bottom: 0.8rem; border-bottom: 1px solid var(--border-color); padding-bottom: 8px; }
+/* Ajustes do acordeão: ícone e transição */
+.accordion-header { 
+    background: none; border: none; padding: 18px 10px; cursor: pointer;
+  }
+  .accordion-header:focus { outline: 3px solid rgba(197,168,128,0.18); outline-offset: 3px; }
+  
+  .icon-toggle {
+    transition: transform 0.25s ease, color 0.25s ease;
+    color: var(--accent-color);
+    font-size: 1.05rem;
+    width: 22px; display: inline-block; text-align: center;
+  }
+  
+  /* Gira levemente o ícone quando ativo (opcional) */
+  .accordion-item.active .icon-toggle {
+    transform: rotate(90deg);
+    color: var(--primary-color);
+  }
+  
+  /* Garante que o conteúdo esteja oculto inicialmente */
+  .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out; }
+  
+  /* Conteúdo interno com espaçamento confortável */
+  .accordion-content-inner { padding: 8px 12px 28px 12px; color: #545b62; line-height: 1.6; }
 
 /* Rodapé */
 footer {
